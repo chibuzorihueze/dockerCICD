@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+      - name: List directory contents
+        run: ls -R
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
       - name: Log in to Docker Hub
